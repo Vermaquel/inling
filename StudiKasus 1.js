@@ -17,9 +17,9 @@ Map.addLayer(areaStudi,{color:"Blue" },"Area Studi"); // Untuk menampilkan layer
 Map.centerObject(ee.FeatureCollection(areaStudi), 8); // Untuk mengarahkan fokus peta saat di Run, pada obyek layer studi
 
 // -=-=-=-= Segmen ini untuk menentukan waktu yang digunakan pada data =-=-=-
-var daftarTanggal = [['2016-01-01', '2020-12-31'], // tahun 2019
-  ['2018-01-01', '2020-12-31'], // tahun 2020
-  ['2020-01-01', '2020-12-31']]; // tahun 2021
+var daftarTanggal = [['2016-01-01', '2020-12-31'], // periode 2016-2020
+  ['2018-01-01', '2020-12-31'], // periode 2018-2020
+  ['2020-01-01', '2020-12-31']]; // periode 2020
 var start = ee.Date(daftarTanggal[0][0]); // List akan diganti setiap urutan 0, 1, 2
 var end = ee.Date(daftarTanggal[0][1]); // List akan diganti setiap urutan 0, 1, 2
 
