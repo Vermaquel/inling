@@ -23,7 +23,7 @@ var daftarTanggal = [['2016-01-01', '2020-12-31'], // tahun 2019
 var start = ee.Date(daftarTanggal[0][0]); // List akan diganti setiap urutan 0, 1, 2
 var end = ee.Date(daftarTanggal[0][1]); // List akan diganti setiap urutan 0, 1, 2
 
-// -=-=-=-= Segmen baris kode ini adalah untuk mengimport data Landsat 7 SR Tidak Di-masking awan Namun dilakukan sorting tutupan awan =-=-=-=-
+// -=-=-=-= Segmen baris kode ini adalah untuk mengimport data Landsat 7 SR mentah =-=-=-=-
 var data1 = function(_date) { // fungsi untuk menyediakan data berdasarkan waktu yang di inputkan
     return ee.ImageCollection('LANDSAT/LE07/C01/T1_SR')  // memanggil koleksi data Landsat 7 surface reflektance
       .filterBounds(areaStudi) // melakukan filter data hanya pada area studi saja
