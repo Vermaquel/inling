@@ -502,7 +502,7 @@ var rgbVis = comp.map(function(img) { // fungsi untuk mengembalikan gambar denga
 
 var gifParams = { // parameter untuk membuat gif
   'region': region, // batas wilayah perekaman animasi
-  'dimensions': 600, // dimensi gambar animasi
+  'dimensions': 250, // dimensi gambar animasi
   'crs': 'EPSG:3857', // Ellipsoid yang digunakan menampilkan gambar animasi
   'framesPerSecond': 10, // jumlah frame yang ditampilkan dalam satu detik
   'format': 'gif' // format gambar animasi
