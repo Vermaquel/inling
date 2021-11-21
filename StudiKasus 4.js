@@ -547,6 +547,15 @@ var LSTimeSeries = ui.Chart.image.seriesByRegion(LST, titik, ee.Reducer.mean(),'
   pointSize: 3}); // Memberikan ukuran titik
 print(LSTimeSeries); // Menampilkan grafik di console
 
+// -=-=-=-= Segmen baris kode ini adalah untuk menampilkan UI GIf =-=-=-=-
+var legend2 = ui.Panel({ // Membuat variabel yang memuat gif aplikasi
+  style: { 
+    position: 'bottom-left', // mengeset letak gif panel di kanan bawah
+    padding: '8px 8px' // mengeset ukuran padding gif panel
+  }});
+  legend2.add(ui.Thumbnail(rgbVis, gifParams)); // menambahkan gif pada panel gif
+Map.add(legend2); // menambahkan gif pada di peta
+
 // -=-=-=-= Segmen baris kode ini adalah untuk menampilkan UI/UX Input titik dari user =-=-=-=-
 var drawingTools = Map.drawingTools(); // membuat variabel untuk menggambar di tampilan peta
 drawingTools.setShown(false); // menambahkan variabel gambar ke dalam peta namun belum ditampilkan
